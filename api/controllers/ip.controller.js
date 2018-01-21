@@ -7,7 +7,7 @@ var IPs = [221.221.12.34, 221.221.12.35, 221.221.12.36, 221.221.12.37, 221.221.1
 			221.221.12.46, 221.221.12.47, 221.221.12.48, 221.221.12.49, 221.221.12.50, 221.221.12.51];
 
 module.exports.checkIP = function(req, res){
-	var ip = req.params.IP;
+	var ip = req.body.IP;
 	if(IPs.indexOf(ip) != -1){
 
 		//Generate a random local IP(unique key) for purpose of this project

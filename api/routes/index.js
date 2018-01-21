@@ -4,5 +4,5 @@ var router = express.Router();
 var ip = require("../controllers/ip.controller.js");
 
 router
-	.route("/checkIP/:IP")
+	.route("/checkIP")
 	.post(ip.checkIP);
